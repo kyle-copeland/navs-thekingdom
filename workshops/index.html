@@ -1,4 +1,15 @@
 ---
+layout: default
 title: Workshops
 ---
 <h1>Workshops!</h1>
+{% for workshop in site.workshops %}
+	<div class="workshop">
+	{% if workshop.picture %}
+		<img class="workshop-img {% if workshop.picture-float-right %}workshop--float-right{% else %} workshop--float-left {% endif %}" src="{{ workshop.picture }}"/>
+	{% endif %}
+	<div class="workshop-description"> 
+		{{ workshop.output }}
+	</div>
+	</div>
+{% endfor %}

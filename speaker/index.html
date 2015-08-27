@@ -1,4 +1,15 @@
 ---
+layout: default
 title: Speaker
 ---
-<h1>Speaker!</h1>
+
+{% for speaker in site.speakers %}
+<div class="speaker">
+	{% if speaker.picture %}
+		<img class="speaker-img speaker--float-left" src="{{ speaker.picture }}">
+	{% endif %}
+	<div class="speaker-description">
+		{{ speaker.output }}
+	</div>
+</div>
+{% endfor %}
