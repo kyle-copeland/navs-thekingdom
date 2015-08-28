@@ -1,21 +1,36 @@
 .workshop {
-	height:200px;
-	width: 600px;
+	min-height: 180px;
+	width: 800px;
 }
 
 .workshop-img {
 	height:150px;
 	width:150px;
-	padding: 10px 10px 10px 0px; 
+
 }
 
-.workshop--float-left {
+.workshop-img--placeholder-odd {
+	background: linear-gradient(135deg, rgb(126, 203, 185), rgb(151,222,225));
+	background-clip:content-box;
+	padding: 10px 10px 10px 0px; 
 	float:left;
 }
 
-.workshop--float-right {
+.workshop-img--placeholder-even {
+	background: linear-gradient(135deg, rgb(151,222,225), rgb(112,203,220));
+	background-clip:content-box;
+	padding: 10px 0px 10px 10px;  
 	float:right;
 }
+
+.workshop-title{
+	display: inline;
+}
+.workshop-speaker{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
 .speaker {
 	height: 400px;
 	width: 600px;
@@ -29,4 +44,16 @@
 
 .speaker--float-left {
 	float: left;
+}
+
+.site-header {
+	background: linear-gradient(135deg, rgb(112,203,220),rgb(126, 203, 185));
+}
+
+.site-title, .site-title:visited{
+	color:#FEFEFE;
+}
+
+.site-nav .page-link {
+	color:#FEFEFE;
 }

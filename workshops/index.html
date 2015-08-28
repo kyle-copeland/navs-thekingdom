@@ -1,14 +1,21 @@
 ---
 layout: default
 title: Workshops
+order: 1
 ---
 <h1>Workshops!</h1>
-{% for workshop in site.workshops %}
+{% assign workshops = site.workshops | sort: 'title' %}
+{% for workshop in workshops %}
+	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 	<div class="workshop">
 	{% if workshop.picture %}
 		<img class="workshop-img {% if workshop.picture-float-right %}workshop--float-right{% else %} workshop--float-left {% endif %}" src="{{ workshop.picture }}"/>
+	{% else %}
+		<div class="{% if thecycle == 'odd' %}workshop-img workshop-img--placeholder-odd {% else %}workshop-img workshop-img--placeholder-even {% endif %}"></div>
 	{% endif %}
 	<div class="workshop-description"> 
+		<h1 class="workshop-title"> {{ workshop.title }}</h1> 
+		<p class="workshop-speaker"> <i>{{ workshop.speaker }} </i></p>
 		{{ workshop.output }}
 	</div>
 	</div>
