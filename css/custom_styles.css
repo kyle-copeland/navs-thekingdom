@@ -37,6 +37,19 @@
 	float:right;
 }
 
+.workshop-image--women {
+	background: linear-gradient(135deg, #E21073, #562368);
+	background-clip: content-box;
+}
+
+.speaker-placeholder-img {
+	height: 250px;
+	width: 250px;
+	background: linear-gradient(135deg, #75C9BC, #00B2E2);
+	background-clip:content-box;
+	padding: 10px 10px 10px 0px; 
+	float:left;
+}
 .workshop-title{
 	display: inline;
 }
@@ -47,7 +60,7 @@
 
 .speaker {
 	height: 400px;
-	width: 600px;
+	width: 800px;
 }
 
 .speaker-img {

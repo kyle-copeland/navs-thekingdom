@@ -1,5 +1,6 @@
 ---
 title: "Authenticity (women only)"
-speaker: "Cassie and Sherin"
+speaker: "Cassie & Sherin"
+women-only: true
 ---
 Coming Soon

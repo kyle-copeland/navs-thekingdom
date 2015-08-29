@@ -8,8 +8,12 @@ title: Speaker
 <div class="speaker">
 	{% if speaker.picture %}
 		<img class="speaker-img speaker--float-left" src="{{ speaker.picture }}">
+	{% else %}
+		<div class="speaker-placeholder-img"></div>
 	{% endif %}
+	
 	<div class="speaker-description">
+	<h1 class="speaker-name"> {{ speaker.name }}</h1> 
 		{{ speaker.output }}
 	</div>
 </div>

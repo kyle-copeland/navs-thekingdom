@@ -1,6 +1,6 @@
 ---
 title: "Quiet Time with a Purpose"
-speaker: "Dana and Allie Malkin"
+speaker: "Dana & Allie Malkin"
 ---
 There is nothing more valuable during
 this life than getting to know your Bible 
