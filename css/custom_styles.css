@@ -59,13 +59,12 @@
 }
 
 .speaker {
-	height: 400px;
+	min-height: 400px;
 	width: 800px;
 }
 
 .speaker-img {
-	width: 200px;
-	height: 200px;
+	max-width: 200px;
 	padding: 10px 10px 10px 0px;
 }
 
