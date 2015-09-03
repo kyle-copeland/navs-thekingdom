@@ -14,7 +14,7 @@
 
 .workshop {
 	min-height: 180px;
-	width: 800px;
+	max-width: 800px;
 }
 
 .workshop-img {
@@ -97,4 +97,21 @@ h1 {
 
 .site-footer .wrapper p > a {
 	color: #5a5a5a;
+}
+
+.home a {
+	color: #5a5a5a;
+}
+.navs-logo {
+	max-width:200px;
+	margin-top:-25px;
+	padding:15px;
+}
+
+.footer--left {
+	float:left;
+}
+
+.footer--right {
+	float:right;
 }
