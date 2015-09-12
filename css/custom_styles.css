@@ -12,6 +12,9 @@
     src: url(/fonts/MrEavesModOT-Bold.otf);
 }
 
+.site-title img {
+	margin-bottom:-40px;
+}
 .workshop {
 	min-height: 180px;
 	max-width: 800px;
