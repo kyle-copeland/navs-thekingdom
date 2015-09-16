@@ -11,7 +11,7 @@ order: 1
 	{% if workshop.picture %}
 		<img class="workshop-img {% if workshop.picture-float-right %}workshop--float-right{% else %} workshop--float-left {% endif %}" src="{{ workshop.picture }}"/>
 	{% else %}
-		<div class="{% if thecycle == 'odd' %}workshop-img workshop-img--placeholder-odd {% else %}workshop-img workshop-img--placeholder-even {% endif %}{% if workshop.women-only %} workshop-image--women {% endif %}"></div>
+		<div class="{% if thecycle == 'odd' %}workshop-img workshop-img--placeholder-odd {% else %}workshop-img workshop-img--placeholder-even {% endif %}{% if workshop.women-only %} workshop-image--women {% elsif workshop.men-only%} workshop-image--men {% endif %}"></div>
 	{% endif %}
 	<div class="workshop-description"> 
 		<h1 class="workshop-title"> {{ workshop.title }}</h1> 
