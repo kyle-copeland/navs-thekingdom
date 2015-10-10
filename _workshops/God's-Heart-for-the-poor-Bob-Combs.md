@@ -1,6 +1,6 @@
 ---
 title: "God’s Heart for the Poor"
-speaker: "Bob Combs"
+speaker: "Mike Herman"
 ---
 Why should issues of poverty and justice
 be important to Christians? Because 
